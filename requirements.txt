@@ -1,0 +1,29 @@
+# Install in the llm-gnn Conda environment. PyTorch wheels use CUDA 13.0.
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch==2.9.1+cu130
+torchvision==0.24.1+cu130
+torchaudio==2.9.1+cu130
+torch_geometric==2.8.0.post1
+transformers==5.17.0
+accelerate==1.15.0
+safetensors==0.8.0
+sentencepiece==0.2.2
+pandas==3.0.6
+pyarrow==25.0.1
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+seaborn==0.13.2
+tensorboard==2.21.0
+huggingface_hub==1.33.0
+PyYAML==6.0.3
+
+# PyG CUDA extensions (install separately because they are hosted by data.pyg.org):
+# python -m pip install \
+#   pyg_lib==0.7.0+pt29cu130 \
+#   torch_scatter==2.1.2+pt29cu130 \
+#   torch_sparse==0.6.18+pt29cu130 \
+#   torch_cluster==1.6.3+pt29cu130 \
+#   torch_spline_conv==1.2.2+pt29cu130 \
+#   -f https://data.pyg.org/whl/torch-2.9.0+cu130.html

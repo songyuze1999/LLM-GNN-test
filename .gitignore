@@ -1,0 +1,20 @@
+# Python caches and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local datasets, model weights, embeddings, graphs, and generated runs
+data/raw/
+data/processed/
+data/models/
+results/
+
+# Local environment and editor files
+.env
+.venv/
+venv/
+.idea/
+.vscode/
+*.swp
