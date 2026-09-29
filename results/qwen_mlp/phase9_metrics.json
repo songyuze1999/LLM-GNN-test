@@ -1,0 +1,48 @@
+{
+  "phase": 9,
+  "dataset": "RE2-TT",
+  "seed": 42,
+  "window_seconds": 60,
+  "model": "frozen Qwen mean-pooled service-window embeddings + standardized MLP",
+  "embedding_manifest": "data/processed/embeddings/qwen/60s/manifest.json",
+  "embedding_dimension": 3584,
+  "cases_used": 89,
+  "windows": {
+    "train": 1563,
+    "validation": 290,
+    "test": 334
+  },
+  "missing_embedding_cases": [
+    "re2tt_ts-auth-service_cpu_1"
+  ],
+  "fit_seconds": 0.37,
+  "metrics": {
+    "train": {
+      "precision": 0.871331828442438,
+      "recall": 0.9566294919454771,
+      "f1": 0.9119905493207324,
+      "roc_auc": 0.9572900480583257,
+      "pr_auc": 0.9533632777572457
+    },
+    "validation": {
+      "precision": 0.5705882352941176,
+      "recall": 0.6554054054054054,
+      "f1": 0.610062893081761,
+      "roc_auc": 0.5434906737723639,
+      "pr_auc": 0.5697024216759867
+    },
+    "test": {
+      "precision": 0.6302083333333334,
+      "recall": 0.6797752808988764,
+      "f1": 0.654054054054054,
+      "roc_auc": 0.6683952751368483,
+      "pr_auc": 0.7243235686657131
+    }
+  },
+  "config_file": "configs/default.yaml",
+  "split_file": "data/processed/splits/re2tt_case_split.parquet",
+  "gpu": {
+    "available": true,
+    "name": "NVIDIA GeForce RTX 5090"
+  }
+}

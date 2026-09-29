@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "split": {
+    "train": 1563,
+    "validation": 290,
+    "test": 334
+  },
+  "missing_embedding_cases": [
+    "re2tt_ts-auth-service_cpu_1"
+  ],
+  "embedding_manifest": "data/processed/embeddings/qwen/60s/manifest.json"
+}

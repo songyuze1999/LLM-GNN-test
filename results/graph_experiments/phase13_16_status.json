@@ -1,0 +1,21 @@
+{
+  "phase13": {
+    "status": "completed",
+    "description": "GCN/GAT/GATv2 anomaly and RCA comparison",
+    "source": "phase10_12_metrics.json"
+  },
+  "phase14": {
+    "status": "completed",
+    "description": "fault-type test metrics generated from real predictions",
+    "output": "phase14_fault_metrics.csv"
+  },
+  "phase15": {
+    "status": "not_applicable",
+    "description": "cross-system analysis requires RE2-OB or RE2-SS; only RE2-TT is present"
+  },
+  "phase16": {
+    "status": "completed",
+    "description": "representative test-case rankings exported",
+    "source": "phase10_12_rca_rankings.csv"
+  }
+}

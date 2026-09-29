@@ -9,7 +9,7 @@ __pycache__/
 data/raw/
 data/processed/
 data/models/
-results/
+
 
 # Local environment and editor files
 .env

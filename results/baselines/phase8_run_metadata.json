@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "split_file": "data/processed/splits/re2tt_case_split.parquet",
+  "qwen_pooling": "mean over services per window",
+  "missing_log_cases": [
+    "re2tt_ts-auth-service_cpu_1"
+  ],
+  "missing_embedding_cases": [
+    "re2tt_ts-auth-service_cpu_1"
+  ]
+}

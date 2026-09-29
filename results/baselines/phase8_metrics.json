@@ -1,0 +1,65 @@
+{
+  "dataset": "RE2-TT",
+  "seed": 42,
+  "window_seconds": 60,
+  "text_cases": 89,
+  "qwen_cases": 89,
+  "tfidf_features": 5000,
+  "models": [
+    {
+      "model": "tfidf_logistic_regression",
+      "fit_seconds": 0.036,
+      "validation": {
+        "precision": 0.5175438596491229,
+        "recall": 0.39864864864864863,
+        "f1": 0.45038167938931295,
+        "pr_auc": 0.5795823214321691,
+        "roc_auc": 0.501570232204035
+      },
+      "test": {
+        "precision": 0.72,
+        "recall": 0.5056179775280899,
+        "f1": 0.594059405940594,
+        "pr_auc": 0.7297555077916067,
+        "roc_auc": 0.6903990204552002
+      }
+    },
+    {
+      "model": "tfidf_mlp",
+      "fit_seconds": 0.69,
+      "validation": {
+        "precision": 0.46788990825688076,
+        "recall": 0.34459459459459457,
+        "f1": 0.3968871595330739,
+        "pr_auc": 0.5512255203629087,
+        "roc_auc": 0.475399695470118
+      },
+      "test": {
+        "precision": 0.7372881355932204,
+        "recall": 0.4887640449438202,
+        "f1": 0.5878378378378378,
+        "pr_auc": 0.748026543086888,
+        "roc_auc": 0.6998703543647364
+      }
+    },
+    {
+      "model": "qwen_embedding_mlp",
+      "fit_seconds": 0.501,
+      "validation": {
+        "precision": 0.5705882352941176,
+        "recall": 0.6554054054054054,
+        "f1": 0.610062893081761,
+        "pr_auc": 0.5697024216759867,
+        "roc_auc": 0.5434906737723639
+      },
+      "test": {
+        "precision": 0.6302083333333334,
+        "recall": 0.6797752808988764,
+        "f1": 0.654054054054054,
+        "pr_auc": 0.7243235686657131,
+        "roc_auc": 0.6683952751368483
+      }
+    }
+  ],
+  "config_file": "configs/default.yaml"
+}
